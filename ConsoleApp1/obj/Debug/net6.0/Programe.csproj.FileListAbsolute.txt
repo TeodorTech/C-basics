@@ -1,0 +1,15 @@
+D:\LearnC#\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Programe.csproj.AssemblyReference.cache
+D:\LearnC#\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Programe.GeneratedMSBuildEditorConfig.editorconfig
+D:\LearnC#\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Programe.AssemblyInfoInputs.cache
+D:\LearnC#\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Programe.AssemblyInfo.cs
+D:\LearnC#\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Programe.csproj.CoreCompileInputs.cache
+D:\LearnC#\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\Programe.exe
+D:\LearnC#\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\Programe.deps.json
+D:\LearnC#\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\Programe.runtimeconfig.json
+D:\LearnC#\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\Programe.dll
+D:\LearnC#\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\Programe.pdb
+D:\LearnC#\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Programe.dll
+D:\LearnC#\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\refint\Programe.dll
+D:\LearnC#\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Programe.pdb
+D:\LearnC#\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\Programe.genruntimeconfig.cache
+D:\LearnC#\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ref\Programe.dll
