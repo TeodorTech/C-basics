@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using Programe.Exceptions;
+using System.Diagnostics;
 
 namespace Programe
 {
@@ -9,7 +10,7 @@ namespace Programe
         {
 
 
-            User userTeodor = new User("Teodor", "Nicolau", 23);
+            User userTeodor = new User("", "Nicolau", 23);
             User userAlex = new User("Alex", "Dinca", -5);
             try
             {
@@ -43,7 +44,7 @@ namespace Programe
             Car carHonda = new Car("Honda", "Civic", 2020, 25000);
             Car carToyota = new Car("Toyota", "Supra", 2021, 50500);
 
-            Booking bookHonda = new Booking(payHonda.Total(0), payHonda.isPaid, carHonda, userTeodor);
+            Booking bookHonda = new Booking(payHonda.Total(0), payHonda.isPaid, carHonda=null, userTeodor);
             bookHonda.BookCar();
 
 

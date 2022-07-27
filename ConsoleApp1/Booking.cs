@@ -16,7 +16,7 @@ namespace Programe
         public Car car;
         public User user;
 
-        public Booking( int total, bool isBooked, Car car,User user)
+        public Booking(int total, bool isBooked, Car car, User user)
         {
             id = Guid.NewGuid();
             this.total = total;
@@ -26,17 +26,37 @@ namespace Programe
         }
         public void BookCar()
         {
-          
-            car.Available = !isBooked;
-            if (car.Available)
+            try
             {
-                Console.WriteLine("Car is available");
+                if (car == null)
+                {
+                    throw new  Exceptions.InvalidBookingException("You need to select a car");
+                }
+                else
+                {
+                    car.Available = !isBooked;
+                    if (car.Available)
+                    {
+                        Console.WriteLine("Car is available");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Car is NOT available!!!");
+                    }
+                }
+               
             }
-            else
+            catch (Exceptions.InvalidBookingException ex)
             {
-                Console.WriteLine("Car is NOT available!!!");
+                Console.WriteLine(ex.Message);
             }
-
+            
         }
+
+        /* catch (Exceptions.InvalidBookingException ex)
+         {
+             Console.WriteLine(ex.Message);
+         }*/
     }
 }
+/*}*/

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Programe
+namespace Programe.Exceptions
 {
-    internal class ExceptionAge:Exception
+    public class ExceptionAge : Exception
     {
         public ExceptionAge(string? message) : base(message)
         {
