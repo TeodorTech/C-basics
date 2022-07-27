@@ -6,31 +6,31 @@ using System.Threading.Tasks;
 
 namespace Programe
 {
-    internal class Car
+    public class Car
     {
+        private Guid id;
+        public Guid Id { get => id; }
+        
+
         public string make;
         public string model;
         public int year;
-        public static bool available=true;
+        private bool available;
+        public bool Available { get => available; set => available = value; }
         public int price;
+
         public Car(string make, string model, int year, int price)
         {
             this.make = make;
             this.model = model;
             this.year = year;
             this.price = price;
-        }
-        //this function checks in the payment class if a payment was done then sets the availability of the car to false 
-        public static void isAvailable()
-        {
-            if (Payment.payment == true)
-            {
-                available = false;
-                Console.WriteLine("Car is already booked");
-            }
-
+            this.available = true;
+            id = Guid.NewGuid();
         }
 
 
+
+        
     }
 }

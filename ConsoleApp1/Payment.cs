@@ -6,22 +6,33 @@ using System.Threading.Tasks;
 
 namespace Programe
 {
-    internal class Payment
+    public class Payment
     {
-        public static int Id;
-        public int ammount;
-        public static bool payment=true;
+        private int id;
+        public int Id { get => id; set => id = value; }
+        public int pricePerDay;
+        public bool isPaid;
         public double numberDaysRented;
-        public Payment(int ammount)
+
+        public Payment(int pricePerDay, bool isPaid)
         {
-            Id++;
-            this.ammount = ammount;
-    
-            /*this.numberDaysRented = numberDaysRented;*/
+
+            this.pricePerDay = pricePerDay;
+            this.isPaid = isPaid;
+
+
         }
-        //Here i have overloaded the method
-       public int Total (int numberDaysRented) {  return ammount* numberDaysRented; }
-       public double Total(double numberDaysRented) {  return  ammount * numberDaysRented; }
-       public float Total(float numberDaysRented) { return ammount * numberDaysRented; }
+        ///Here i have overloaded the method <summary>
+        /// Here i have overloaded the method
+        /// </summary>
+        /// <param name="numberDaysRented"></param>
+        /// <returns></returns>
+        public int Total(int numberDaysRented) { return pricePerDay / numberDaysRented; }
+        public double Total(double numberDaysRented) { return pricePerDay * numberDaysRented; }
+        public float Total(float numberDaysRented) { return pricePerDay * numberDaysRented; }
+
+
+
+
     }
 }

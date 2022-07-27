@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LearnC#\\ConsoleApp1\\ConsoleApp1\\Programe.csproj": {}
+    "D:\\LearnC#\\C#basics\\C-basics\\ConsoleApp1\\Programe.csproj": {}
   },
   "projects": {
-    "D:\\LearnC#\\ConsoleApp1\\ConsoleApp1\\Programe.csproj": {
+    "D:\\LearnC#\\C#basics\\C-basics\\ConsoleApp1\\Programe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LearnC#\\ConsoleApp1\\ConsoleApp1\\Programe.csproj",
+        "projectUniqueName": "D:\\LearnC#\\C#basics\\C-basics\\ConsoleApp1\\Programe.csproj",
         "projectName": "Programe",
-        "projectPath": "D:\\LearnC#\\ConsoleApp1\\ConsoleApp1\\Programe.csproj",
+        "projectPath": "D:\\LearnC#\\C#basics\\C-basics\\ConsoleApp1\\Programe.csproj",
         "packagesPath": "C:\\Users\\Teo\\.nuget\\packages\\",
-        "outputPath": "D:\\LearnC#\\ConsoleApp1\\ConsoleApp1\\obj\\",
+        "outputPath": "D:\\LearnC#\\C#basics\\C-basics\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Teo\\AppData\\Roaming\\NuGet\\NuGet.Config",
