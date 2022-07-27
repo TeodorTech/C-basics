@@ -29,6 +29,7 @@ namespace Programe
 #if DEBUG
             finally
             {
+                Debug.WriteLine("We are in Debug");
                 Console.WriteLine("The programe was executed in DEBUG");
             }
 #endif
@@ -41,25 +42,15 @@ namespace Programe
 
             Car carHonda = new Car("Honda", "Civic", 2020, 25000);
             Car carToyota = new Car("Toyota", "Supra", 2021, 50500);
-            try
-            {
-                Booking bookHonda = new Booking(payHonda.Total(0), payHonda.isPaid, carHonda, userTeodor);
-                bookHonda.BookCar();
-            }
-            catch(DivideByZeroException) {
-                Console.WriteLine ("Number of days cant be zero.Try again!!!");
-                 
-            }
-            try
-            {
-                Booking bookToyota = new Booking(payToyota.Total(10), payToyota.isPaid, carToyota, userAlex);
-                bookToyota.BookCar();
-            }
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("Number of days cant be zero.Try again!!!");
 
-            }
+            Booking bookHonda = new Booking(payHonda.Total(0), payHonda.isPaid, carHonda, userTeodor);
+            bookHonda.BookCar();
+
+
+            Booking bookToyota = new Booking(payToyota.Total(10), payToyota.isPaid, carToyota, userAlex);
+            bookToyota.BookCar();
+
+
 
 
 

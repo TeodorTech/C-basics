@@ -27,7 +27,7 @@ namespace Programe
         /// </summary>
         /// <param name="numberDaysRented"></param>
         /// <returns></returns>
-        public int Total(int numberDaysRented) { return pricePerDay / numberDaysRented; }
+        public int Total(int numberDaysRented) { return pricePerDay * numberDaysRented; }
         public double Total(double numberDaysRented) { return pricePerDay * numberDaysRented; }
         public float Total(float numberDaysRented) { return pricePerDay * numberDaysRented; }
 
