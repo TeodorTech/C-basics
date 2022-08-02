@@ -17,9 +17,10 @@ namespace Programe
         public int year;
         private bool available;
         public bool Available { get => available; set => available = value; }
-        public int price;
+        public float price;
+        public override string ToString() => $"{make},{price}";
 
-        public Car(string make, string model, int year, int price)
+        public Car(string make, string model, int year, float price)
         {
             this.make = make;
             this.model = model;
@@ -28,6 +29,16 @@ namespace Programe
             this.available = true;
             id = Guid.NewGuid();
         }
+        
+        public static List<Car>GenerateListOfCars(Car[] car)
+        {
+
+            var ListOfCars = new List<Car>();
+            ListOfCars.AddRange(car);
+            return ListOfCars;
+           
+                    
+    }
 
 
 

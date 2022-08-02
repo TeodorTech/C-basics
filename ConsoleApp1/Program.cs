@@ -1,11 +1,12 @@
 ﻿using Programe.Exceptions;
 using System.Diagnostics;
+using System.Linq;
 
 namespace Programe
 {
     public class Programe
     {
-
+        
         static void Main(string[] args)
         {
 
@@ -42,33 +43,28 @@ namespace Programe
 
 
             Car carHonda = new Car("Honda", "Civic", 2020, 25000);
-            Car carToyota = new Car("Toyota", "Supra", 2021, 50500);
+            Car carToyota = new Car("Toyota", "Supra", 2021, 30500);
+            Car carAudi = new Car("Audi", "R8", 2007, 40000);
+            Car carMercedes = new Car("Mercedes", "S-class", 2016, 42000);
+            Car carBmw = new Car("BMW", "M4", 2018, 54000);
+            Car carPorche = new Car("Porche", "911 Carrera", 2021, 140000);
 
-            Booking bookHonda = new Booking(payHonda.Total(0), payHonda.isPaid, carHonda=null, userTeodor);
-            bookHonda.BookCar();
-
-
+            Booking bookHonda = new Booking(payHonda.Total(0), payHonda.isPaid, carHonda, userTeodor);
             Booking bookToyota = new Booking(payToyota.Total(10), payToyota.isPaid, carToyota, userAlex);
-            bookToyota.BookCar();
 
+            ///Here we take the make of the Car object and write them in a txt file
+            WriteReadText file = new WriteReadText();
+            file.WriteTheNames(new string[] { carHonda.make, carToyota.make, carAudi.make,carBmw.make,carMercedes.make,carPorche.make });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            ///Here i read from that txt file and then I create a new txt file with each car having an index.
+            int count = 1;
+            string[]array = new string[10];
+            foreach (string car in File.ReadAllLines(@"D:\LearnC#\C#basics\C-basics\Folder\ListOfCars.txt"))
+            {
+                array[count]=($"{car} is the car at the index {count++}");
+                
+            }
+            File.WriteAllLines(@"D:\LearnC#\C#basics\C-basics\Folder\ListOfCarIndexes.txt",array);
 
         }
 
