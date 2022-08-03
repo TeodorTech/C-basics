@@ -1,10 +1,10 @@
 
-Honda is the car with index 1
-Toyota is the car with index 2
-Audi is the car with index 3
-BMW is the car with index 4
-Mercedes is the car with index 5
-Porche is the car with index 6
+Honda is the car at the index 1
+Toyota is the car at the index 2
+Audi is the car at the index 3
+BMW is the car at the index 4
+Mercedes is the car at the index 5
+Porche is the car at the index 6
 
 
 
